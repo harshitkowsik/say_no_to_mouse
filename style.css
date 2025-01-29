@@ -304,13 +304,14 @@ ul{
 
     .home {
         flex-direction: column;
-        padding: 30vh 4vh;
+        padding: 20vh 4vh;
     }
 
     #demo {
         height: 30vh;
         width: 100%;
         font-size: 50px;
+        margin-top : 5vh;
     }
 
 
