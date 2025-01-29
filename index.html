@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say No To Mouse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="./menu.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                Demo Website
+            </div>
+            <div class="button" onclick=menu()><img src="menu.png" width="30px"></div>
+        </nav>
+
+
+        <div class="menu" id="menu" onclick="menu()">
+            <a href="#home">
+                <div class="side-nav-items">Home</div>
+            </a>
+            <a href="#gallary">
+                <div class="side-nav-items">Gallary</div>
+            </a>
+            <a href="#contacts">
+                <div class="side-nav-items">Contacts</div>
+            </a>
+            <a href="#about">
+                <div class="side-nav-items">About</div>
+            </a>
+            <a href="#" onclick="main()">
+                <div class="side-nav-items" style="color: red;">Hints -></div>
+            </a>
+        </div>
+
+
+        <div class="home" id="home">
+            <p id="demo">
+            </p>
+            <div class="home-img">
+                img
+            </div>
+        </div>
+    </header>
+    <div class="hrl"></div>
+    <div class="gallary" id="gallary">
+        <p>Gallary</p>
+    </div>
+
+    <div class="gallary-back">
+        <div class="gallary-img">1</div>
+        <div class="gallary-img">2</div>
+        <div class="gallary-img">3</div>
+        <div class="gallary-img">4</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="hrl"></div>
+    <div class="about" id="about">
+        <div class="about-title">
+            About
+        </div>
+        <br>
+        <p>Welcome to "Say No to Mouse," a revolutionary web experience designed exclusively for desktop users who prefer the efficiency of keyboard navigation. Our platform empowers you to navigate, interact, and control every aspect of your browsing experience using only your keyboard. Say goodbye to the hassle of clicking and dragging with a mouse! With intuitive key commands, you can seamlessly explore content, access features, and engage with our community—all at lightning speed. Whether you're a gamer, a coder, or just someone who values productivity, our site is tailored for you. Join us in redefining how we interact with technology—one keystroke at a time!</p>
+    </div>
+
+    <div class="hrl"> </div>
+
+
+    <div class="below-tokens-area" id="contacts">
+        <div class="below-tokens">
+            <p class="below-tokens-main-text">
+                India<br>
+                Asia
+            </p>
+        </div>
+
+        <div class="below-tokens">
+            <p class="below-tokens-main-text">
+                Mon – Fri <br>
+                9am – 4pm
+            </p>
+
+        </div>
+
+        <div class="below-tokens">
+            <p class="below-tokens-main-text">
+                <a href="#"> saynotomouse@gmail.com</a><br>
+                <a href="#"> teamsaynotomouse@gmail.com</a>
+            </p>
+
+        </div>
+
+        <div class="below-tokens">
+            <p class="below-tokens-main-text">
+                © Say No To Mouse 2025
+            </p>
+
+        </div>
+    </div>
+
+    <div class="main" id="main">
+        <div class="hint">
+            <div class="hint-head">
+                <p>Shortcut Keys : Press H</p>
+                <p onclick="main()" style="cursor: pointer; color: red;"> -> H</p>
+            </div>
+            <div class="hrl">
+                <ul>
+                    <li>Menu -> <span onclick="menu()">Press M </span></li>
+                    <li>Dark Mode -> <span onclick="darkTheme()">Press D </span> </li>
+                    <li>Bright Mode -> <span onclick="brightTheme()">Press B </span></li>
+                    <li>Green Mode -> <span onclick="greenTheme()">Press G</span></li>
+                    <li>Close This Menu -> <span onclick="main()">Press H</span></li>
+                    <li >Options Switch -> Press TAB</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mob" id="mob">
+        <div class="mob-details">
+            <div class="mob-details-head">
+                <p style="font-weight: bold;">Warning !!</p>
+            </div>
+            <div class="hrl" style="margin-bottom: 0px; height: 1px;"></div>
+            <p>
+                This is a Demo Website. It only works with Desktop or PC.<br><br>
+                You have to press keys through your external keyboard.<br><br>
+            </p>
+            <div onclick="mob()" style="color: blue; cursor: pointer;">Continue Browsing -></div>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
